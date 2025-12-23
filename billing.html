@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - Tick Tock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">Tick Tock</div>
+                <div class="header-actions">
+                    <div class="search-bar"><input type="text" placeholder="Search"></div>
+                    <div class="header-icons">
+                        <a href="#">&#128100;</a>
+                        <a href="#">&#9734;</a>
+                        <a href="bag.html">&#128717;</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Men's</a></li>
+                    <li><a href="#">Women's</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Baselworld</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="checkout-header">
+            <div style="font-size: 11px; font-weight: bold; color: #666;">&#128274; SECURE</div>
+            <h1 class="checkout-title">BILLING</h1>
+            <div style="width: 50px;"></div>
+        </div>
+
+        <!-- Progress Steps (Billing Active) -->
+        <div
+            style="display: flex; justify-content: space-between; max-width: 600px; margin: 30px auto 50px; text-align: center; position: relative;">
+            <div style="position: absolute; top: 10px; left: 0; right: 0; height: 1px; background: #ddd; z-index: -1;">
+            </div>
+
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; letter-spacing: 1px; color: #999;">SIGN IN</span>
+                <div
+                    style="width: 8px; height: 8px; border: 1px solid #ccc; background: #fff; border-radius: 50%; margin: 5px auto;">
+                </div>
+            </div>
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; letter-spacing: 1px; color: #999;">SHIPPING</span>
+                <div
+                    style="width: 8px; height: 8px; border: 1px solid #ccc; background: #fff; border-radius: 50%; margin: 5px auto;">
+                </div>
+            </div>
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; font-weight: bold; letter-spacing: 1px;">BILLING</span>
+                <div style="width: 8px; height: 8px; background: #000; border-radius: 50%; margin: 5px auto;"></div>
+            </div>
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; letter-spacing: 1px; color: #999;">CONFIRMATION</span>
+                <div
+                    style="width: 8px; height: 8px; border: 1px solid #ccc; background: #fff; border-radius: 50%; margin: 5px auto;">
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. ORDER SUMMARY -->
+        <h3 class="section-head">1. YOUR ORDER SUMMARY</h3>
+        <div class="grey-section">
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>ITEM</th>
+                        <th>COLOUR</th>
+                        <th>QUANTITY</th>
+                        <th>UNIT PRICE</th>
+                        <th>SHIPPING</th>
+                        <th>TAX</th>
+                        <th>DUTIES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div style="display: flex; gap: 15px;">
+                                <div
+                                    style="width: 60px; height: 60px; background: #fff; display:flex; align-items:center; justify-content:center; color:#999; font-size:9px;">
+                                    Watch</div>
+                                <div>
+                                    <div style="font-weight: bold; font-size: 12px; margin-bottom: 4px;">JUNGHANS</div>
+                                    <div style="font-size: 11px; color: #444;">Max Bill Chronoscope<br>40mm<br>Stainless
+                                        Steel</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Black</td>
+                        <td>1</td>
+                        <td>£2,750</td>
+                        <td>£0</td>
+                        <td>£0</td>
+                        <td>£140</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td colspan="3" style="text-align: left; font-size: 11px; text-decoration: underline;">ADD A
+                            GIFT CARD OR PROMOTION CODE</td>
+                        <td colspan="3">TOTAL</td>
+                        <td>£2,890</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 2. ADDRESS REVIEW -->
+        <h3 class="section-head">2. REVIEW SHIPPING AND BILLING ADDRESS</h3>
+        <div class="grey-section address-review">
+            <div class="address-box">
+                <div class="address-title">SHIPPING ADDRESS</div>
+                Mr. David Olson<br>
+                4220 Raintree Boulevard<br>
+                Montezuma<br>
+                Indiana<br>
+                47862<br>
+                USA
+                <a href="checkout.html" class="edit-link">CHANGE SHIPPING ADDRESS</a>
+            </div>
+            <div class="address-box">
+                <div class="address-title">BILLING ADDRESS</div>
+                Same as Shipping Address
+                <a href="#" class="edit-link">EDIT BILLING ADDRESS</a>
+            </div>
+        </div>
+
+        <!-- 3. DELIVERY METHOD -->
+        <h3 class="section-head">3. DELIVERY METHOD</h3>
+        <div class="grey-section delivery-options">
+            <div class="delivery-col">
+                <div class="address-title">EXPRESS DELIVERY (£Free)</div>
+                Delivered in 3-4 business days
+            </div>
+            <div class="delivery-col">
+                <div class="address-title">PACKAGING OPTIONS</div>
+                Calibre Premium Packaging<br>
+                <span style="font-size: 10px; text-decoration: underline;">GIFT MESSAGE & PERSONALISED LABELS
+                    AVAILABLE</span>
+            </div>
+        </div>
+
+        <!-- 4. PAYMENT DETAILS -->
+        <h3 class="section-head">4. PAYMENT DETAILS</h3>
+        <div class="grey-section">
+            <div class="address-title">PAYMENT METHOD</div>
+            <div class="payment-icons">
+                <label style="display: flex; align-items: center; gap: 5px;">
+                    <input type="radio" name="payment" checked>
+                    <span style="font-size: 20px;">&#128179;</span> <!-- Card Icon -->
+                </label>
+                <label style="display: flex; align-items: center; gap: 5px;">
+                    <input type="radio" name="payment">
+                    <span style="font-size: 20px;">P</span> <!-- Paypal text/icon -->
+                </label>
+            </div>
+
+            <form id="payment-form" style="max-width: 500px;">
+                <div class="form-group">
+                    <label style="font-size: 11px; font-weight: bold; margin-bottom: 5px; display: block;">CARDHOLDER
+                        NAME</label>
+                    <input type="text" class="form-input" style="background:#fff;">
+                </div>
+
+                <div class="form-group">
+                    <label style="font-size: 11px; font-weight: bold; margin-bottom: 5px; display: block;">CARD
+                        NUMBER</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" class="form-input" style="background:#fff; width: 25%;">
+                        <input type="text" class="form-input" style="background:#fff; width: 25%;">
+                        <input type="text" class="form-input" style="background:#fff; width: 25%;">
+                        <input type="text" class="form-input" style="background:#fff; width: 25%;">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div style="display: flex; gap: 20px;">
+                        <div style="flex: 1;">
+                            <label
+                                style="font-size: 11px; font-weight: bold; margin-bottom: 5px; display: block;">EXPIRATION
+                                DATE</label>
+                            <div style="display: flex; gap: 10px;">
+                                <input type="text" placeholder="MM" class="form-input" style="background:#fff;">
+                                <input type="text" placeholder="YY" class="form-input" style="background:#fff;">
+                            </div>
+                        </div>
+                        <div style="width: 100px;">
+                            <label style="font-size: 11px; font-weight: bold; margin-bottom: 5px; display: block;">CVV
+                                ?</label>
+                            <input type="text" class="form-input" style="background:#fff;">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="font-size: 13px; display: flex; align-items: center; gap: 10px;">
+                        <input type="checkbox" checked> Securely store payment details for next purchase.
+                    </label>
+                </div>
+
+                <!-- Footer button here for visual flow -->
+                <div style="display: flex; justify-content: flex-end; width: 200%; margin-left: -100%;">
+                    <!-- Hack to push button far right -->
+                    <button type="submit" class="btn"
+                        style="width: auto; padding: 15px 40px; background-color: #333;">COMPLETE PURCHASE</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="bottom-links container">
+        &copy; 2025 Tick Tock
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
