@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Tick Tock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .checkout-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .checkout-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .checkout-grid {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 60px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            width: 150px;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .form-field {
+            flex: 1;
+        }
+
+        .required {
+            color: #333;
+        }
+
+        /* Side Panel */
+        .side-panel {
+            background-color: #eaeaea;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #333;
+        }
+
+        .panel-section {
+            padding: 20px 0;
+            border-bottom: 1px solid #dcdcdc;
+        }
+
+        .panel-section:last-child {
+            border-bottom: none;
+        }
+
+        .panel-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .buy-now-sticky {
+            margin-top: 40px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">Tick Tock</div>
+                <div class="header-actions">
+                    <div class="search-bar"><input type="text" placeholder="Search"></div>
+                    <div class="header-icons">
+                        <a href="#">&#128100;</a>
+                        <a href="#">&#9734;</a>
+                        <a href="bag.html">&#128717;</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Men's</a></li>
+                    <li><a href="#">Women's</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Baselworld</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="checkout-header">
+            <div style="font-size: 11px; font-weight: bold; color: #666;">&#128274; SECURE</div>
+            <h1 class="checkout-title">SHIPPING</h1>
+            <div style="width: 50px;"></div> <!-- spacer to balance center alignment -->
+        </div>
+
+        <!-- Progress Steps (Shipping Active) -->
+        <div
+            style="display: flex; justify-content: space-between; max-width: 600px; margin: 30px auto 50px; text-align: center; position: relative;">
+            <div style="position: absolute; top: 10px; left: 0; right: 0; height: 1px; background: #ddd; z-index: -1;">
+            </div>
+
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; letter-spacing: 1px; color: #999;">SIGN IN</span>
+                <div
+                    style="width: 8px; height: 8px; border: 1px solid #ccc; background: #fff; border-radius: 50%; margin: 5px auto;">
+                </div>
+            </div>
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; font-weight: bold; letter-spacing: 1px;">SHIPPING</span>
+                <div style="width: 8px; height: 8px; background: #000; border-radius: 50%; margin: 5px auto;"></div>
+            </div>
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; letter-spacing: 1px; color: #999;">BILLING</span>
+                <div
+                    style="width: 8px; height: 8px; border: 1px solid #ccc; background: #fff; border-radius: 50%; margin: 5px auto;">
+                </div>
+            </div>
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; letter-spacing: 1px; color: #999;">CONFIRMATION</span>
+                <div
+                    style="width: 8px; height: 8px; border: 1px solid #ccc; background: #fff; border-radius: 50%; margin: 5px auto;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Top 'Buy Now' button -->
+        <div style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 20px;">
+            <div style="font-size: 24px; color: #666; margin-right: 15px;"></div>
+            <!-- Wallet/Card icon placeholder -->
+            <button class="btn" style="width: auto; padding: 10px 40px; background-color: #333;">BUY NOW</button>
+        </div>
+
+        <div class="checkout-grid">
+            <!-- Left: Form -->
+            <form id="checkout-form">
+                <div class="form-row">
+                    <label class="form-label">TITLE *</label>
+                    <div class="form-field"><input type="text" class="form-input" placeholder="Mr / Mrs / Ms"></div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">FIRST NAME *</label>
+                    <div class="form-field"><input type="text" class="form-input"></div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">LAST NAME *</label>
+                    <div class="form-field"><input type="text" class="form-input"></div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">COUNTRY *</label>
+                    <div class="form-field"><input type="text" class="form-input" placeholder="Select One"></div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">ADDRESS LINE 1 *</label>
+                    <div class="form-field"><input type="text" class="form-input"></div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">ADDRESS LINE 2</label>
+                    <div class="form-field"><input type="text" class="form-input"></div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">CITY *</label>
+                    <div class="form-field"><input type="text" class="form-input"></div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">COUNTY / PROVINCE</label>
+                    <div class="form-field"><input type="text" class="form-input"></div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">POSTCODE / ZIP *</label>
+                    <div class="form-field"><input type="text" class="form-input"></div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">TELEPHONE *</label>
+                    <div class="form-field"><input type="text" class="form-input"></div>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">MOBILE</label>
+                    <div class="form-field"><input type="text" class="form-input"></div>
+                </div>
+
+                <div style="margin-left: 150px; margin-top: 20px;">
+                    <div style="margin-bottom: 10px;">
+                        <input type="radio" name="billing" id="same" checked> <label for="same"
+                            style="font-size: 12px; margin-left: 5px;">Use shipping address as billing address</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="billing" id="separate"> <label for="separate"
+                            style="font-size: 12px; margin-left: 5px;">Enter separate billing address</label>
+                    </div>
+                    <div style="margin-top: 20px; font-size: 11px; color: #666;">* Required Fields</div>
+                </div>
+            </form>
+
+            <!-- Right: Info Panel -->
+            <div class="side-panel">
+                <div class="panel-section">
+                    SHIPPING RESTRICTIONS AND DUTIES MAY APPLY
+                </div>
+                <div class="panel-section">
+                    <div class="panel-title">NEED HELP?</div>
+                    CALL US: +44 (0)10 2345 6789
+                    <div style="margin-top: 10px;">
+                        EMAIL CUSTOMER CARE | SHIPPING INFORMATION
+                    </div>
+                </div>
+                <div class="panel-section" style="border:none;">
+                    RETURNS & EXCHANGES
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom 'Buy Now' button -->
+        <div class="buy-now-sticky">
+            <div style="font-size: 24px; color: #666; margin-right: 15px;"></div>
+            <button class="btn" form="checkout-form"
+                style="width: auto; padding: 10px 40px; background-color: #333;">BUY NOW</button>
+        </div>
+
+    </main>
+
+    <footer class="bottom-links container">
+        &copy; 2025 Tick Tock
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
