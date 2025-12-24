@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Tick Tock</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Simple Icons (using text/emoji for simplicity if FontAwesome not requested, but let's stick to simple SVGs or symbols if needed. For now simple text icons as placeholders or unicode) -->
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">Tick Tock</div>
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="header-icons">
+                        <a href="#">&#128100;</a> <!-- User Icon -->
+                        <a href="#">&#9734;</a> <!-- Star Icon -->
+                        <a href="bag.html">&#128717;</a> <!-- Bag Icon -->
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Men's</a></li>
+                    <li><a href="#">Women's</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Baselworld</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="container">
+        <h1 class="page-title">SIGN IN</h1>
+
+        <!-- Progress Steps (Static visual) -->
+        <div style="display: flex; justify-content: space-between; max-width: 600px; margin: 0 auto 50px; text-align: center; position: relative;">
+            <!-- Line behind -->
+            <div style="position: absolute; top: 10px; left: 0; right: 0; height: 1px; background: #ddd; z-index: -1;"></div>
+            
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; font-weight: bold; letter-spacing: 1px;">SIGN IN</span>
+                <div style="width: 8px; height: 8px; background: #000; border-radius: 50%; margin: 5px auto;"></div>
+            </div>
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; letter-spacing: 1px; color: #999;">SHIPPING</span>
+                <div style="width: 8px; height: 8px; border: 1px solid #ccc; background: #fff; border-radius: 50%; margin: 5px auto;"></div>
+            </div>
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; letter-spacing: 1px; color: #999;">BILLING</span>
+                <div style="width: 8px; height: 8px; border: 1px solid #ccc; background: #fff; border-radius: 50%; margin: 5px auto;"></div>
+            </div>
+            <div style="background: #fff; padding: 0 10px;">
+                <span style="font-size: 11px; letter-spacing: 1px; color: #999;">CONFIRMATION</span>
+                <div style="width: 8px; height: 8px; border: 1px solid #ccc; background: #fff; border-radius: 50%; margin: 5px auto;"></div>
+            </div>
+        </div>
+
+        <div class="split-container">
+            <!-- EXISTING CUSTOMER -->
+            <div class="split-section" style="border-right: 1px solid #eee;">
+                <h2 class="section-title">EXISTING CUSTOMER</h2>
+                <p class="info-text">
+                    Make purchases faster using previously saved details.<br>
+                    Track previous orders and easily request returns from the website.
+                </p>
+                
+                <form>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-input">
+                    </div>
+                    
+                    <a href="#" class="forgot-password">FORGOT PASSWORD?</a>
+                    
+                    <button type="submit" class="btn btn-signin">SIGN IN</button>
+                </form>
+            </div>
+
+            <!-- NEW CUSTOMER -->
+            <div class="split-section">
+                <h2 class="section-title">NEW CUSTOMER</h2>
+                <p class="info-text">
+                    You'll need an account to purchase watches, track and<br>
+                    review orders, and manage your personal details.
+                </p>
+
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Confirm Password" class="form-input">
+                    </div>
+
+                    <button type="submit" class="btn btn-register">REGISTER</button>
+                    
+                    <div class="bottom-links" style="border: none; margin-top: 20px; font-size: 11px;">
+                        By registering you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bottom-links container">
+        <!-- Footer content if needed, leveraging bottom-links class for now -->
+        &copy; 2025 Tick Tock
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
